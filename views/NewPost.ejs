@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+<%- include("partials/header.ejs") %>
+<div class="container">
+    <h1>Create New Post</h1>
+    <form action="/add" method="POST">
+        <div class="mb-3">
+            <label for="Title"  class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="Title" placeholder="Enter Your Post Title..." required>
+        </div>
+        <div class="mb-3">
+            <label for="Author Name" class="form-label">Author Name</label>
+            <input type="text" name="Author" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Name">
+        </div>
+        <div class="mb-3">
+            <p>Content</p>
+            <textarea id="message" name="content" required rows="5" cols="133" placeholder="Write Your Post Content Here ..."></textarea>
+        </div>
+        <button type="submit" class="button2">Publish Post.</button>
+         </form>
+        <a href="/"><button class="button3">Cancel</button></a>
+   
+</div>
+  
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<%- include("partials/header.ejs") %>
+    <% if (posts.length === 0) { %>
+        <img src="/image/No Post Yet.png" class="image1" alt="image">
+        <p class="p">start sharing your thoughts by creating your first blog post!</p>
+        <a href="/NewPost"><button class="button1"><i class="fa-regular fa-plus"></i>Create First Post.</button></a>
+    <% } else { %>
+        <% posts.reverse().forEach(post => { %>
+            <div class="post">
+                <h2><%= post.title %></h2><hr>
+                <p><%= post.Author %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date - <%= new Date().getDate()%>/<%=new Date().getMonth()%>/<%=new Date().getFullYear()%></p>
+                <p><%= post.content %></p>
+                <form action="/delete/<%= post.id %>" method="POST">
+                    <button class="button4" onclick="return confirm('Delete this post!')">Delete Post</button>
+                </form>
+            </div>
+        <% }); %>
+    <% } %>
+    
+<script src="https://kit.fontawesome.com/4cd48c87a3.js" crossorigin="anonymous"></script>
+
+<%- include("partials/footer.ejs") %>
+    

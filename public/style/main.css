@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+i {
+  margin-right: 10px;
+}
+.fa-plus{
+  font-size: 20px;
+}
+.navbar-logo {
+  padding: 15px;
+  color: #fff;
+}
+.navbar-logo:hover{
+  color: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+.navbar-mainbg {
+  background-color: #8FABD4;
+  padding: 0px;
+}
+
+
+#navbarSupportedContent > ul > li.active > a {
+  color: #8FABD4;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+
+
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button:hover::before {
+  left: 120%;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
+
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background: #8FABD4;
+  color: white;
+}
+.Made{
+  position:absolute;
+  bottom: 0;
+  right: 10px;
+  color: white;  
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a {
+  font-size: 2em;
+  color: #d4d2d2;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  padding: 15px 2px 1px 1px ;
+}
+footer .social_icon .twitter a:hover {
+  transform: translateY(-15px);
+  color: #1DA1F2;
+}
+footer .social_icon .linkedin a:hover {
+  transform: translateY(-15px);
+  color: #0077B5;
+}
+footer .social_icon .instagram a:hover {
+  transform: translateY(-15px);
+  color: #C13584;
+}
+footer .social_icon .facebook a:hover {
+  transform: translateY(-15px);
+  color: #0460d8;
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #ccc;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.80;
+}
+footer .menu li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.copyright {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.p{
+  position: absolute;
+  top: 49%;
+  left: 35%;
+}
+.image1{
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.button1{
+  position: absolute;
+  top: 58%;
+  left: 43.3%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button1:hover::before {
+  left: 120%;
+}
+
+.button1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
+
+
+.button2{
+  position: absolute;
+  top: 70%;
+  left: 14.5%;
+  width: 45%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button2:hover::before {
+  left: 120%;
+}
+
+.button2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
+
+.button3{
+  position: absolute;
+  top: 70%;
+  left: 62%;
+  width: 23%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button3:hover::before {
+  left: 120%;
+}
+
+.button3:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
+.post{
+  border: 2px solid #5b7db1;
+  padding: 5px;
+  margin: 10px;
+}
+.button4{
+  position: absolute;
+  top: 11%;
+  left: 75%;
+  width: 10%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button4:hover::before {
+  left: 120%;
+}
+
+.button4:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
+
+
+.button5{
+  position: absolute;
+  top: 11%;
+  left: 63%;
+  width: 10%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  background: #5b7db1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(91, 125, 177, 0.25);
+}
+
+.button5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.button5:hover::before {
+  left: 120%;
+}
+
+.button5:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
+}
