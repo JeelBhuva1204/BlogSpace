@@ -383,3 +383,145 @@ footer .menu li a:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(91, 125, 177, 0.4);
 }
+
+
+@media (max-width: 376px) {
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #fff;
+  }
+
+  .navbar-logo {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button1{
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    gap: 5px;
+    width: 60%;
+    left: 20%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(91, 125, 177, 0.25);
+  }
+  .button,
+  .button2,
+  .button3,
+  .button4,
+  .button5 {
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    gap: 5px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(91, 125, 177, 0.25);
+  }
+
+  .image1 {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: auto;
+  }
+
+
+  .p {
+    position: relative;
+    top: auto;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+
+  .button1 {
+    position: relative;
+    top: auto;
+    margin: 10px auto;
+    transform: none;
+  }
+
+  .button2 {
+    width: 45%;
+    position: relative;
+    top: 50%;
+    left: 23%;
+  }
+
+  .button3 {
+    width: 30%;
+    position: absolute;
+    top: 76.2%;
+    left: 70%;
+    
+  }
+
+  .button4 {
+    position: relative;
+    top: auto;
+    margin: 10px auto;
+  }
+
+  .button5 {
+    position: relative;
+    top: auto;
+    margin: 10px auto;
+  }
+
+  
+  .post {
+    margin: 8px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  
+  footer {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    padding: 20px 10px 12px 10px;
+  }
+
+  footer .social_icon {
+    gap: 12px;
+    padding: 0;
+  }
+
+  footer .social_icon li {
+    list-style: none;
+  }
+
+  footer .social_icon li a {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+  }
+
+  footer .copyright,
+  footer .Made {
+    font-size: 0.85rem;
+    color: #fff;
+    margin: 4px 0;
+    opacity: 0.9;
+  }
+
+  
+  body::after {
+    content: "";
+    display: block;
+    height: 0;
+  }
+}
